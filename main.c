@@ -27,7 +27,7 @@ int main()
         if (userGuess == randomNum)
         {
             printf("\nCongrats! You guessed it.");
-            break;
+            return;
         }
         else if (userGuess < 0 || userGuess > 20) // checking for an invalid guess
             printf("The number is between 0 and 20.\n");

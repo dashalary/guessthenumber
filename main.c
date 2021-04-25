@@ -15,7 +15,7 @@ int main()
     // Get the random number
     randomNum = rand() % 21; // ensuring the random number is between 0 and 20
 
-    printf("\nThis is a guessing game");
+    printf("\nThis is a guessing game.");
     printf("\nI have chosen a number between 0 and 20, which you must guess. \n");
 
     for (numOfGuesses = 5; numOfGuesses > 0; --numOfGuesses)
@@ -30,11 +30,11 @@ int main()
             break;
         }
         else if (userGuess < 0 || userGuess > 20) // checking for an invalid guess
-            printf("The number is between 0 and 20.");
+            printf("The number is between 0 and 20.\n");
         else if (randomNum > userGuess)
-            printf("Sorry, %d is wrong. My number is greater than that.", userGuess);
+            printf("Sorry, %d is wrong. My number is greater than that.\n", userGuess);
         else if (randomNum < userGuess)
-            printf("Sorry, %d is wrong. My number is less than that.", userGuess);
+            printf("Sorry, %d is wrong. My number is less than that.\n", userGuess);
     }
     printf("\nYou've had 5 tries and failed. The number was %d\n.", randomNum);
 
